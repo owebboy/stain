@@ -1,0 +1,2 @@
+# stain
+Color significantly changes how a design looks. It gives off a sense of emotion that only eyes can depict. Color may be the most important tool in the designer’s toolbox.  Color is in essence, just a ton of different light waves that move in different rhythms. When these waves meet the retina, magic happens. 
