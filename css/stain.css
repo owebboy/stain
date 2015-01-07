@@ -161,3 +161,23 @@
 .border-lavender-herb {
   border-color: hsla(303, 19%, 63%, 1);
 }
+/* black */
+.black {
+  color: hsla(0, 0%, 7%, 1.0);
+}
+.bg-black {
+  background: hsla(0, 0%, 7%, 1.0);
+}
+.border-black {
+  border-color: hsla(0, 0%, 7%, 1.0);
+}
+/* white */
+.white {
+  color: hsla(0, 0%, 100%, 1);
+}
+.bg-white {
+  background: hsla(0, 0%, 100%, 1);
+}
+.border-white {
+  border-color: hsla(0, 0%, 100%, 1);
+}
