@@ -1,6 +1,6 @@
 {
-	"aquamarine": "hsla(198, 43%, 73%, 1)",
-	"scuba-blue": "hsla(187, 100%, 40%, 1)",
+	"aquamarine":"hsla(198, 43%, 73%, 1)",
+	"scuba-blue":"hsla(187, 100%, 40%, 1)",
 	"lucite-green":"hsla(162, 46%, 65%, 1)",
 	"classic-blue":"hsla(213, 65%, 33%, 1)",
 	"toasted-almond":"hsla(26, 38%, 71%, 1)",
@@ -14,5 +14,7 @@
 	"woodbine":"hsla(61, 33%, 38%, 1)",
 	"sandstone":"hsla(22, 45%, 60%, 1)",
 	"titanium":"hsla(300, 1%, 53%, 1)",
-	"lavender-herb":"hsla(303, 19%, 63%, 1)"
+	"lavender-herb":"hsla(303, 19%, 63%, 1)",
+	"black":"hsla(0, 0%, 7%, 1.0)",
+	"white":"hsla(0, 100%, 50%, 1.0)"
 }
