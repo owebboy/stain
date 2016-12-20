@@ -1,39 +1,28 @@
 /*
-
 	GULPFILE.JS
 	owebboy
 */
 
 /* gulp and pluins ----------------------------------------- */
 var gulp 				= require('gulp'),
-		stylus 			= require('gulp-stylus'),
+    yaml 				= require('gulp-yaml'),
 		cssmin 			= require('gulp-cssmin'),
 		rename 			= require('gulp-rename'),
 		webserver 	= require('gulp-webserver');
 
-/* destinations -------------------------------------------- */
-var stylusFile 	= './stylus/stain.styl';
-
-/* stylus to css to minifcation ---------------------------- */
-gulp.task('stylus', function()
+/* yaml to json to css to minifcation ---------------------------- */
+gulp.task('tojson', function()
 {
-	gulp.src(stylusFile)
-		.pipe(stylus())
-		.pipe(gulp.dest('./css'))
-		.pipe(cssmin())
-		.pipe(rename(
-		{
-			suffix: '.min'
-		}))
-		.pipe(gulp.dest('./css'));
+  gulp.src('./palette.yml')
+	  .pipe(yaml({ schema: 'DEFAULT_FULL_SCHEMA' }))
+	  .pipe(gulp.dest('./'));
 });
 
 /* webserver ----------------------------------------------- */
 gulp.task('webserver', function()
 {
 	gulp.src('./')
-		.pipe(webserver(
-		{
+		.pipe(webserver({
 			livereload: false,
 			directoryListing: false,
 			open: true,
@@ -42,7 +31,7 @@ gulp.task('webserver', function()
 });
 
 /* default task -------------------------------------------- */
-gulp.task('default', ['webserver', 'stylus'], function()
+gulp.task('default', ['webserver', 'tojson'], function()
 {
-	gulp.watch(stylusFile, ['stylus']);
+	gulp.watch('./palette.yml', ['tojson']);
 });

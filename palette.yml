@@ -1,0 +1,90 @@
+---
+- palette: numi
+  author: https://numi.io
+  colors:
+    - name: heather
+      color: "#AEBEC6"
+    - name: cerulean
+      color: "#00ACE3"
+    - name: concrete
+      color: "#F2F2F2"
+    - name: white
+      color: "#FFFFFF"
+    - name: cod-gray
+      color: "#0A0A0A"
+    - name: black
+      color: "#000000"
+    - name: shark
+      color: "#35373B"
+- palette: clrs
+  author: http://clrs.cc
+  colors:
+    - name: navy
+      color: "#001f3f"
+    - name: blue
+      color: "#0074D9"
+    - name: aqua
+      color: "#7FDBFF"
+    - name: teal
+      color: "#39CCCC"
+    - name: olive
+      color: "#3D9970"
+    - name: green
+      color: "#2ECC40"
+    - name: lime
+      color: "#01FF70"
+    - name: yellow
+      color: "#FFDC00"
+    - name: orange
+      color: "#FF851B"
+    - name: red
+      color: "#FF4136"
+    - name: maroon
+      color: "#85144b"
+    - name: fuchsia
+      color: "#F012BE"
+    - name: purple
+      color: "#B10DC9"
+    - name: black
+      color: "#111111"
+    - name: gray
+      color: "#AAAAAA"
+    - name: silver
+      color: "#DDDDDD"
+    - name: white
+      color: "#FFFFFF"
+- palette: pantone
+  author: http://www.pantone.com/pages/fcr/?season=spring&year=2015&pid=11
+  colors:
+  - name: aquamarine
+    color: "#95C7DA"
+  - name: scuba-blue
+    color: "#00B8CF"
+  - name: lucite-green
+    color: "#60D6B8"
+  - name: classic-blue
+    color: "#19498D"
+  - name: toasted-almond
+    color: "#D6B097"
+  - name: strawberry-ice
+    color: "#F07B8C"
+  - name: tangerine
+    color: "#FF8745"
+  - name: custard
+    color: "#EADC86"
+  - name: marsala
+    color: "#9E484C"
+  - name: glacier-gray
+    color: "#C6CCCD"
+  - name: dusk-blue
+    color: "#77A2C1"
+  - name: treetop
+    color: "#417537"
+  - name: woodbine
+    color: "#7D853D"
+  - name: sandstone
+    color: "#CF8966"
+  - name: titanium
+    color: "#898688"
+  - name: lavender-herb
+    color: "#BA88B1"

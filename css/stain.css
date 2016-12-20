@@ -1,183 +1,405 @@
-/* stain
- * owebboy
- */
-/* aquamarine */
-.aquamarine {
-  color: hsla(198, 43%, 73%, 1);
+/*---
+  stain.css
+  version 2
+  oliver pope
+  ---*/
+
+/*numi heather*/
+.numi-heather-c {
+  color: #AEBEC6;
 }
-.bg-aquamarine {
-  background: hsla(198, 43%, 73%, 1);
+
+/*numi cerulean*/
+.numi-cerulean-c {
+  color: #00ACE3;
 }
-.border-aquamarine {
-  border-color: hsla(198, 43%, 73%, 1);
+
+/*numi concrete*/
+.numi-concrete-c {
+  color: #F2F2F2;
 }
-/* scuba-blue */
-.scuba-blue {
-  color: hsla(187, 100%, 40%, 1);
+
+/*numi white*/
+.numi-white-c {
+  color: #FFFFFF;
 }
-.bg-scuba-blue {
-  background: hsla(187, 100%, 40%, 1);
+
+/*numi cod-gray*/
+.numi-cod-gray-c {
+  color: #0A0A0A;
 }
-.border-scuba-blue {
-  border-color: hsla(187, 100%, 40%, 1);
+
+/*numi black*/
+.numi-black-c {
+  color: #000000;
 }
-/* lucite-green */
-.lucite-green {
-  color: hsla(162, 46%, 65%, 1);
+
+/*numi shark*/
+.numi-shark-c {
+  color: #35373B;
 }
-.bg-lucite-green {
-  background: hsla(162, 46%, 65%, 1);
+
+/*clrs navy*/
+.clrs-navy-c {
+  color: #001f3f;
 }
-.border-lucite-green {
-  border-color: hsla(162, 46%, 65%, 1);
+
+/*clrs blue*/
+.clrs-blue-c {
+  color: #0074D9;
 }
-/* classic-blue */
-.classic-blue {
-  color: hsla(213, 65%, 33%, 1);
+
+/*clrs aqua*/
+.clrs-aqua-c {
+  color: #7FDBFF;
 }
-.bg-classic-blue {
-  background: hsla(213, 65%, 33%, 1);
+
+/*clrs teal*/
+.clrs-teal-c {
+  color: #39CCCC;
 }
-.border-classic-blue {
-  border-color: hsla(213, 65%, 33%, 1);
+
+/*clrs olive*/
+.clrs-olive-c {
+  color: #3D9970;
 }
-/* toasted-almond */
-.toasted-almond {
-  color: hsla(26, 38%, 71%, 1);
+
+/*clrs green*/
+.clrs-green-c {
+  color: #2ECC40;
 }
-.bg-toasted-almond {
-  background: hsla(26, 38%, 71%, 1);
+
+/*clrs lime*/
+.clrs-lime-c {
+  color: #01FF70;
 }
-.border-toasted-almond {
-  border-color: hsla(26, 38%, 71%, 1);
+
+/*clrs yellow*/
+.clrs-yellow-c {
+  color: #FFDC00;
 }
-/* strawberry-ice */
-.strawberry-ice {
-  color: hsla(354, 62%, 71%, 1);
+
+/*clrs orange*/
+.clrs-orange-c {
+  color: #FF851B;
 }
-.bg-strawberry-ice {
-  background: hsla(354, 62%, 71%, 1);
+
+/*clrs red*/
+.clrs-red-c {
+  color: #FF4136;
 }
-.border-strawberry-ice {
-  border-color: hsla(354, 62%, 71%, 1);
+
+/*clrs maroon*/
+.clrs-maroon-c {
+  color: #85144b;
 }
-/* tangerine */
-.tangerine {
-  color: hsla(22, 91%, 65%, 1);
+
+/*clrs fuchsia*/
+.clrs-fuchsia-c {
+  color: #F012BE;
 }
-.bg-tangerine {
-  background: hsla(22, 91%, 65%, 1);
+
+/*clrs purple*/
+.clrs-purple-c {
+  color: #B10DC9;
 }
-.border-tangerine {
-  border-color: hsla(22, 91%, 65%, 1);
+
+/*clrs black*/
+.clrs-black-c {
+  color: #111111;
 }
-/* custard */
-.custard {
-  color: hsla(49, 69%, 73%, 1);
+
+/*clrs gray*/
+.clrs-gray-c {
+  color: #AAAAAA;
 }
-.bg-custard {
-  background: hsla(49, 69%, 73%, 1);
+
+/*clrs silver*/
+.clrs-silver-c {
+  color: #DDDDDD;
 }
-.border-custard {
-  border-color: hsla(49, 69%, 73%, 1);
+
+/*clrs white*/
+.clrs-white-c {
+  color: #FFFFFF;
 }
-/* marsala */
-.marsala {
-  color: hsla(1, 30%, 45%, 1);
+
+/*pantone aquamarine*/
+.pantone-aquamarine-c {
+  color: #95C7DA;
 }
-.bg-marsala {
-  background: hsla(1, 30%, 45%, 1);
+
+/*pantone scuba-blue*/
+.pantone-scuba-blue-c {
+  color: #00B8CF;
 }
-.border-marsala {
-  border-color: hsla(1, 30%, 45%, 1);
+
+/*pantone lucite-green*/
+.pantone-lucite-green-c {
+  color: #60D6B8;
 }
-/* glacier-gray */
-.glacier-gray {
-  color: hsla(190, 6%, 79%, 1);
+
+/*pantone classic-blue*/
+.pantone-classic-blue-c {
+  color: #19498D;
 }
-.bg-glacier-gray {
-  background: hsla(190, 6%, 79%, 1);
+
+/*pantone toasted-almond*/
+.pantone-toasted-almond-c {
+  color: #D6B097;
 }
-.border-glacier-gray {
-  border-color: hsla(190, 6%, 79%, 1);
+
+/*pantone strawberry-ice*/
+.pantone-strawberry-ice-c {
+  color: #F07B8C;
 }
-/* dusk-blue */
-.dusk-blue {
-  color: hsla(207, 34%, 62%, 1);
+
+/*pantone tangerine*/
+.pantone-tangerine-c {
+  color: #FF8745;
 }
-.bg-dusk-blue {
-  background: hsla(207, 34%, 62%, 1);
+
+/*pantone custard*/
+.pantone-custard-c {
+  color: #EADC86;
 }
-.border-dusk-blue {
-  border-color: hsla(207, 34%, 62%, 1);
+
+/*pantone marsala*/
+.pantone-marsala-c {
+  color: #9E484C;
 }
-/* treetop */
-.treetop {
-  color: hsla(96, 33%, 33%, 1);
+
+/*pantone glacier-gray*/
+.pantone-glacier-gray-c {
+  color: #C6CCCD;
 }
-.bg-treetop {
-  background: hsla(96, 33%, 33%, 1);
+
+/*pantone dusk-blue*/
+.pantone-dusk-blue-c {
+  color: #77A2C1;
 }
-.border-treetop {
-  border-color: hsla(96, 33%, 33%, 1);
+
+/*pantone treetop*/
+.pantone-treetop-c {
+  color: #417537;
 }
-/* woodbine */
-.woodbine {
-  color: hsla(61, 33%, 38%, 1);
+
+/*pantone woodbine*/
+.pantone-woodbine-c {
+  color: #7D853D;
 }
-.bg-woodbine {
-  background: hsla(61, 33%, 38%, 1);
+
+/*pantone sandstone*/
+.pantone-sandstone-c {
+  color: #CF8966;
 }
-.border-woodbine {
-  border-color: hsla(61, 33%, 38%, 1);
+
+/*pantone titanium*/
+.pantone-titanium-c {
+  color: #898688;
 }
-/* sandstone */
-.sandstone {
-  color: hsla(22, 45%, 60%, 1);
+
+/*pantone lavender-herb*/
+.pantone-lavender-herb-c {
+  color: #BA88B1;
 }
-.bg-sandstone {
-  background: hsla(22, 45%, 60%, 1);
+
+/*numi heather*/
+.numi-heather-bg {
+  background: #AEBEC6;
 }
-.border-sandstone {
-  border-color: hsla(22, 45%, 60%, 1);
+
+/*numi cerulean*/
+.numi-cerulean-bg {
+  background: #00ACE3;
 }
-/* titanium */
-.titanium {
-  color: hsla(300, 1%, 53%, 1);
+
+/*numi concrete*/
+.numi-concrete-bg {
+  background: #F2F2F2;
 }
-.bg-titanium {
-  background: hsla(300, 1%, 53%, 1);
+
+/*numi white*/
+.numi-white-bg {
+  background: #FFFFFF;
 }
-.border-titanium {
-  border-color: hsla(300, 1%, 53%, 1);
+
+/*numi cod-gray*/
+.numi-cod-gray-bg {
+  background: #0A0A0A;
 }
-/* lavender-herb */
-.lavender-herb {
-  color: hsla(303, 19%, 63%, 1);
+
+/*numi black*/
+.numi-black-bg {
+  background: #000000;
 }
-.bg-lavender-herb {
-  background: hsla(303, 19%, 63%, 1);
+
+/*numi shark*/
+.numi-shark-bg {
+  background: #35373B;
 }
-.border-lavender-herb {
-  border-color: hsla(303, 19%, 63%, 1);
+
+/*clrs navy*/
+.clrs-navy-bg {
+  background: #001f3f;
 }
-/* black */
-.black {
-  color: hsla(0, 0%, 7%, 1.0);
+
+/*clrs blue*/
+.clrs-blue-bg {
+  background: #0074D9;
 }
-.bg-black {
-  background: hsla(0, 0%, 7%, 1.0);
+
+/*clrs aqua*/
+.clrs-aqua-bg {
+  background: #7FDBFF;
 }
-.border-black {
-  border-color: hsla(0, 0%, 7%, 1.0);
+
+/*clrs teal*/
+.clrs-teal-bg {
+  background: #39CCCC;
 }
-/* white */
-.white {
-  color: hsla(0, 0%, 100%, 1);
+
+/*clrs olive*/
+.clrs-olive-bg {
+  background: #3D9970;
 }
-.bg-white {
-  background: hsla(0, 0%, 100%, 1);
+
+/*clrs green*/
+.clrs-green-bg {
+  background: #2ECC40;
 }
-.border-white {
-  border-color: hsla(0, 0%, 100%, 1);
+
+/*clrs lime*/
+.clrs-lime-bg {
+  background: #01FF70;
+}
+
+/*clrs yellow*/
+.clrs-yellow-bg {
+  background: #FFDC00;
+}
+
+/*clrs orange*/
+.clrs-orange-bg {
+  background: #FF851B;
+}
+
+/*clrs red*/
+.clrs-red-bg {
+  background: #FF4136;
+}
+
+/*clrs maroon*/
+.clrs-maroon-bg {
+  background: #85144b;
+}
+
+/*clrs fuchsia*/
+.clrs-fuchsia-bg {
+  background: #F012BE;
+}
+
+/*clrs purple*/
+.clrs-purple-bg {
+  background: #B10DC9;
+}
+
+/*clrs black*/
+.clrs-black-bg {
+  background: #111111;
+}
+
+/*clrs gray*/
+.clrs-gray-bg {
+  background: #AAAAAA;
+}
+
+/*clrs silver*/
+.clrs-silver-bg {
+  background: #DDDDDD;
+}
+
+/*clrs white*/
+.clrs-white-bg {
+  background: #FFFFFF;
+}
+
+/*pantone aquamarine*/
+.pantone-aquamarine-bg {
+  background: #95C7DA;
+}
+
+/*pantone scuba-blue*/
+.pantone-scuba-blue-bg {
+  background: #00B8CF;
+}
+
+/*pantone lucite-green*/
+.pantone-lucite-green-bg {
+  background: #60D6B8;
+}
+
+/*pantone classic-blue*/
+.pantone-classic-blue-bg {
+  background: #19498D;
+}
+
+/*pantone toasted-almond*/
+.pantone-toasted-almond-bg {
+  background: #D6B097;
+}
+
+/*pantone strawberry-ice*/
+.pantone-strawberry-ice-bg {
+  background: #F07B8C;
+}
+
+/*pantone tangerine*/
+.pantone-tangerine-bg {
+  background: #FF8745;
+}
+
+/*pantone custard*/
+.pantone-custard-bg {
+  background: #EADC86;
+}
+
+/*pantone marsala*/
+.pantone-marsala-bg {
+  background: #9E484C;
+}
+
+/*pantone glacier-gray*/
+.pantone-glacier-gray-bg {
+  background: #C6CCCD;
+}
+
+/*pantone dusk-blue*/
+.pantone-dusk-blue-bg {
+  background: #77A2C1;
+}
+
+/*pantone treetop*/
+.pantone-treetop-bg {
+  background: #417537;
+}
+
+/*pantone woodbine*/
+.pantone-woodbine-bg {
+  background: #7D853D;
+}
+
+/*pantone sandstone*/
+.pantone-sandstone-bg {
+  background: #CF8966;
+}
+
+/*pantone titanium*/
+.pantone-titanium-bg {
+  background: #898688;
+}
+
+/*pantone lavender-herb*/
+.pantone-lavender-herb-bg {
+  background: #BA88B1;
 }

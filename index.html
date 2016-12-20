@@ -1,33 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-
-  <link rel="stylesheet" href="css/stain.min.css">
+  <title>stain.css</title>
+  <link rel="stylesheet" href="css/stain.css">
 
 </head>
 
-<body>
-  <div class="bg-aquamarine    ">&nbsp;</div>
-  <div class="bg-scuba-blue    ">&nbsp;</div>
-  <div class="bg-lucite-green  ">&nbsp;</div>
-  <div class="bg-classic-blue  ">&nbsp;</div>
-  <div class="bg-toasted-almond">&nbsp;</div>
-  <div class="bg-strawberry-ice">&nbsp;</div>
-  <div class="bg-tangerine     ">&nbsp;</div>
-  <div class="bg-custard       ">&nbsp;</div>
-  <div class="bg-marsala       ">&nbsp;</div>
-  <div class="bg-glacier-gray  ">&nbsp;</div>
-  <div class="bg-dusk-blue     ">&nbsp;</div>
-  <div class="bg-treetop       ">&nbsp;</div>
-  <div class="bg-woodbine      ">&nbsp;</div>
-  <div class="bg-sandstone     ">&nbsp;</div>
-  <div class="bg-titanium      ">&nbsp;</div>
-  <div class="bg-lavender-herb ">&nbsp;</div>
-  <div class="bg-black         ">&nbsp;</div>
-  <div class="bg-white         ">&nbsp;</div>
+<body style="margin:0;font-family:'Helvetica Neue', sans-serif;">
+  <h1 style="padding: 1em;">stain.css <small>a ton of color palettes</small></h1>
 </body>
+
+<script src="lib/tinycolor.js"></script>
+<script>
+function loadJSON(callback) {
+
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'palette.json', true);
+    xobj.onreadystatechange = function() {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+
+            // .open will NOT return a value but simply returns undefined in async mode so use a callback
+            callback(xobj.responseText);
+
+        }
+    }
+    xobj.send(null);
+
+}
+loadJSON(function(response) {
+  var palettes = JSON.parse(response),
+      colorClass = [],
+      backgroundClass = [];
+
+  // build css
+  for (var i = 0; i < palettes.length; i++) {
+    for (var c = 0; c < palettes[i].colors.length; c++) {
+      colorClass.push('\n\n/*' + palettes[i].palette + ' ' + palettes[i].colors[c].name + '*/\n.' + palettes[i].palette + '-' + palettes[i].colors[c].name + '-c {\n  color: ' + palettes[i].colors[c].color + '; \n}');
+      backgroundClass.push('\n\n/*' + palettes[i].palette + ' ' + palettes[i].colors[c].name + '*/\n.' + palettes[i].palette + '-' + palettes[i].colors[c].name + '-bg {\n  background: ' + palettes[i].colors[c].color + '; \n}');
+    }
+  }
+
+  // log them
+  console.log('/*---\n  stain.css \n  version 2 \n  oliver pope \n  ---*/' + colorClass.toString().replace(/,/g, ' ') + backgroundClass.toString().replace(/,/g, ' '));
+
+  // build html
+  for (var i = 0; i < palettes.length; i++) {
+    var palette_name = document.createElement('h2');
+    palette_name.innerHTML = palettes[i].palette + ': <a href="' + palettes[i].author + '">' + palettes[i].author + '</a>';
+    palette_name.style.padding = "1em";
+    palette_name.style.margin = "0";
+    document.querySelector('body').appendChild(palette_name);
+    for (var c = 0; c < palettes[i].colors.length; c++) {
+      var color = document.createElement('p');
+      color.innerHTML = palettes[i].colors[c].name + ': ' + palettes[i].colors[c].color;
+      color.classList.add(palettes[i].palette + '-' + palettes[i].colors[c].name + '-bg');
+      if (!tinycolor.isReadable("#000", palettes[i].colors[c].color, {})) {
+        color.style.color = "#fff";
+      }
+      color.style.padding = "1em";
+      color.style.margin = "0";
+      document.querySelector('body').appendChild(color);
+    }
+  }
+});
+</script>
 
 </html>
